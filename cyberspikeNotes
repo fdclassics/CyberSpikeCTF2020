@@ -1,0 +1,50 @@
+
+Geinstalleerd:
+Ruby
+python pip
+snmp-check
+snmpwalk
+onesixtyone
+
+
+SNMP(V1,v2,v3)
+
+3 key components:
+Managed devices
+Agent - software which runs on managed devices
+Network management (NMS) - software which runs on the manager
+port 161,162
+
+snmp brute force tools:
+
+metasploit
+snmpwalk
+snmapstat
+john the ripper
+
+'community strings':
+
+
+    GET – is the command to retrieve an OID from the MIB
+    GET-Next – is the command to walk through the MIB tree going from one OID to the next, this is the command SNMP-walk is based on.
+    SET – write a value in a parameter
+    TRAP – send an error message or alert due to a configurable threshold being passed or a trigger activated
+
+snmpwalk -v 3c -c sun 192.168.6.2
+snmpwalk -v 2c -c <communitystring> 192.168.6.2
+onesixtyone -c /usr/share/doc/onesixtyone/dict.txt 192.168.6.2
+
+https://resources.infosecinstitute.com/snmp-pentesting/
+
+enumeration:
+snmp-check 
+#prerequisites:
+sudo apt-get install python3-tk
+sudo dnf install python3-tkinter
+#python does not work for snmp-check -> install ruby
+
+#Ruby '59' error solution: gem install text-table && gem install snmp
+#info
+
+#Server ip (DAVE IT NETWORK) = 172.16.40.67
+#passwd = 02a843fe76d65a5a
