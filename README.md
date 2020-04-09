@@ -101,7 +101,7 @@ Revealing that the password is saved within the data which in turn is used to lo
 the snmpcheck-tool to log in.
   
 _Given the fact that the communitystring is [sun], it’s perhaps a hint. ‘sun’ associated with SNMP is
-port 8686 – known for Sun App Server – used with nc together with the server address._
+port 8686 – known for Sun App Server – used with netcat together with the server address._
 https://www.speedguide.net/port.php?port=8686
 
 ![Grasshopper, second flag.](/pics/grasshopper_flag2.png)
