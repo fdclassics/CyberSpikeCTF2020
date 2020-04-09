@@ -15,7 +15,7 @@ Sudo, sudoers, shell privilege escalation
 #### Year and date
 march 6 h 2020
 #### TL;DR:
-_This challenge can be quite when one is familiar with vim. If not: bash commands can be executed
+_This challenge can be quite simple when one is familiar with vim. If not: bash commands can be executed
 by vim (privilege escalation) as root. Use :! as a prefix and cat the flag.txt file._
 
 The first step of the challenge is to ssh to the corresponding server:
@@ -39,10 +39,10 @@ uid=1001(student) gid=1001(student) groups=1001(student),27(sudo)``
 suitable as this shows **what can be used as root.**
 
  **Some tested options**
-> `chmod (777)`to change permissions
-> add new user
-> Putting a script in the `~/.bashrc` file to run.
-> `chroot` (change root point)
+..* `chmod (777)`to change permissions
+..* add new user
+..* Putting a script in the `~/.bashrc` file to run.
+..* `chroot` (change root point)
 ..are no success
 
 Meanwhile, `vim` is in the output of `sudo -l` along with the
