@@ -47,7 +47,7 @@ suitable as this shows **what can be used as root.**
 
 Meanwhile, `vim` is in the output of `sudo -l` 
 
-![sudo -l command in terminal](pics/joker_sudo_minus_l.png)
+![vim - symbolic links in terminal](pics/joker_sudo_minus_l.png)
 
 along with the command ``/usr/bin/vim/etc/motd``
 
@@ -58,8 +58,10 @@ _when navigating folders note that vi is vim_
 - CVE-2018-6557 is a particular option that is considered – no result.
 - Another explored possibility is to link another file to vim to be executed in order to gain root
 access.
-- privilege escalation if kernel symlink disabled
+- privilege escalation if kernel symlink is disabled
 - Adjusting the vim sourcecode
+
+![sudo -l command in terminal](pics/joker_symbolic_vim_link.png)
 
 Worth mentioning: `sudo_as_admin_successfull` is a file encountered. Attempting to run
 commands or a script from this file does not make any progress. It’s a dead end.
