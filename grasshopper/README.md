@@ -85,7 +85,7 @@ snmpcheck: https://www.nothink.org/codes/snmpcheck/snmpcheck-1.8.pl
 **snmpcheck**
 
 snmpwalk verified a legit communitystring on an available SNMP service running on the server.
-Snmpcheck is next to gather information about he SNMP configuration.
+Snmpcheck is next to gather information about the SNMP configuration.
 
 command used:
 `ruby snmpcheck.rb <server address> -c <communitystring >| less`
