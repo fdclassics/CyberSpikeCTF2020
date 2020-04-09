@@ -45,17 +45,23 @@ suitable as this shows **what can be used as root.**
 - `chroot` (change root point)
 ...are no success
 
-Meanwhile, `vim` is in the output of `sudo -l` along with the
-command ``/usr/bin/vim/etc/motd``
-when navigating folders note that vi is vimExplored possibilities related to vim and/or motd:
-• CVE-2018-6557 is a particular option that is considered – no result.
-Another explored possibility is to link another file to vim to be executed in order to gain root
+Meanwhile, `vim` is in the output of `sudo -l` 
+Inline-style:
+![sudo -l in terminal](https://github.com/fdclassics/CyberspikeCTF-Joker/pics/joker_sudo_minus_l.png
+
+along with the command ``/usr/bin/vim/etc/motd``
+
+_when navigating folders note that vi is vim_
+
+**Explored possibilities related to vim and/or motd:**
+
+- CVE-2018-6557 is a particular option that is considered – no result.
+- Another explored possibility is to link another file to vim to be executed in order to gain root
 access.
-privilege escalation if kernel symlink disabled
-• Adjusting the vim sourcecode
-•
-•
-Worth mentioning: sudo_as_admin_successfull is a file encountered. Attempting to run
+- privilege escalation if kernel symlink disabled
+- Adjusting the vim sourcecode
+
+Worth mentioning: `sudo_as_admin_successfull` is a file encountered. Attempting to run
 commands or a script from this file does not make any progress. It’s a dead end.
 The options are far fetched. So vim itself is used to execute commands in the linux terminal.
 Various commands can be executed but again there is not much progress.
