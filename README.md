@@ -48,7 +48,7 @@ suitable as this shows **what can be used as root.**
 Meanwhile, `vim` is in the output of `sudo -l` 
 
 Inline-style:
-![sudo -l command in terminal](CyberSpikeCTF/tree/fdclassics-CyberspikeCTF-Joker/pics/joker_sudo_minus_l.png?raw=true)
+![sudo -l command in terminal](pics/joker_sudo_minus_l.png?raw=true)
 
 along with the command ``/usr/bin/vim/etc/motd``
 
