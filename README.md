@@ -72,5 +72,6 @@ commands or a script from this file does not make any progress. It’s a dead en
 The options are far fetched. So `vim` itself is used to execute commands in the linux terminal.
 Various commands can be executed but again there is not much progress.
 
-Finally its figured out that bash commands can be ran from `vim` using the `:!` prefix
+Finally its figured out that bash commands can be ran from `vim` using the `:!` prefix.
+
 After that the solution is simple. `:! cat root/flag.txt`
