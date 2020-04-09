@@ -3,11 +3,10 @@ CyberSpike
 #### Challenge name: 
 Grasshopper
 #### Challenge description:
-Dave the IT guy works at a company and configured his own nc (netcat) communication method for
-the employees to connect to company servers with instead of using SSH, which Dave strongly
-dislikes.
+_Dave the IT guy works at a company and configured his own nc (netcat) communication method for the employees 
+to connect to company servers with instead of using SSH, which Dave strongly dislikes._
 
-The challenge is separated into 4 parts
+The challenge is separated into 4 parts:
 - Foothold
 - Brute-force community string
 - Brute forcing the community string to gain acces.
@@ -27,7 +26,7 @@ _The goal is to gain access the company server by gathering information about SN
 the community string to gather information about credentials. Use the community string to retrieve
 a file including information about the configured SNMP protocol and password. The password is
 used to log in to the server. A final password in order to connect to the **second server** is stored in
-the `remote-access-terminal.sh`, located on the **first server**._
+`remote-access-terminal.sh`, located on the **first server**._
 
 **Note:**
 
@@ -103,6 +102,5 @@ https://www.speedguide.net/port.php?port=8686
 
 ![pic]()
 
-**The terminal of each server have no output**, that is why `echo` <string> after a command is
-used to check if it is done executing.
+**The terminal of each server have no output**, that is why `echo` <string> is used after a command to check whether it is done executing.
 The last password in order to connect to the second server is located in the ```remote-access-terminal.sh``` file.
