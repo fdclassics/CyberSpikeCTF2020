@@ -39,11 +39,11 @@ uid=1001(student) gid=1001(student) groups=1001(student),27(sudo)``
 suitable as this shows **what can be used as root.**
 
  **Some tested options**
-..* `chmod (777)`to change permissions
-..* add new user
-..* Putting a script in the `~/.bashrc` file to run.
-..* `chroot` (change root point)
-..are no success
+- `chmod (777)`to change permissions
+- add new user
+- Putting a script in the `~/.bashrc` file to run.
+- `chroot` (change root point)
+...are no success
 
 Meanwhile, `vim` is in the output of `sudo -l` along with the
 command ``/usr/bin/vim/etc/motd``
