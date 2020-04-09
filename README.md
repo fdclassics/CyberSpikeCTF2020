@@ -83,6 +83,7 @@ The next step is to find an example in order to know what to look for in the fil
 snmpcheck: https://www.nothink.org/codes/snmpcheck/snmpcheck-1.8.pl
 
 **snmpcheck**
+
 snmpwalk verified a legit communitystring on an available SNMP service running on the server.
 Snmpcheck is next to gather information about he SNMP configuration.
 
@@ -103,7 +104,7 @@ _Given the fact that the communitystring is [sun], it’s perhaps a hint. ‘sun
 port 8686 – known for Sun App Server – used with nc together with the server address._
 https://www.speedguide.net/port.php?port=8686
 
-![pic]()
+![Grasshopper, second flag.](/pics/grasshopper_flag2.png)
 
 **The terminal of each server have no output**, that is why `echo` <string> is used after a command to check whether it is done executing.
 The last password in order to connect to the second server is located in the ```remote-access-terminal.sh``` file.
