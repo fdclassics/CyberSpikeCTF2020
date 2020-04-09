@@ -96,7 +96,7 @@ giving output:
 
 Revealing that the password is saved within the data which in turn is used to log in to the server.
 
-**Nc** to <server address> using port 8686 in order to connect, use the password found using
+**Nc** to `<server address>` using port 8686 in order to connect, use the password found using
 the snmpcheck-tool to log in.
   
 _Given the fact that the communitystring is [sun], it’s perhaps a hint. ‘sun’ associated with SNMP is
