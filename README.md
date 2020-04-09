@@ -59,21 +59,23 @@ SNMP uses UDP to transfer data:
 `nmap <server ip> -Pn -sU -p 161 -sV`
 
 **onesixty one**
+
 Is used to brute-force the communitystring. This is done easily by using a dictionary that comes
 with the tool, located at `/usr/share/doc/onesixtyone/`
 Bruteforcing the community string using:
 `onesixtyone -c /usr/share/doc/onesixtyone/dict.txt <server address>`
-![pic]()
+![onesixtyone dictionary usage](pics/onesixtyone_dicttxt.png)
 ‘`[sun]`’ is the community string.
 
 **snmpwalk**
+
 Now we’ve got the communitystring we can test it with nmap. If its correct ([sun] in this case)
 then it shows the output containing the password for the first server:
 `snmpwalk -v 2c -c <communitystring> <server address>`
 used:
 `snmpwalk -v 2c -c sun 192.168.6.2`
 
-![pic]()
+![snmpwalk usage](pics/snmapwalk.png)
 
 As shown snmpwalk has no output when an invalid communitystring is used.
 
@@ -89,7 +91,8 @@ command used:
 In this case:
 `ruby snmpcheck.rb 192.168.6.2-c sun | less`
 giving output:
-![pic]()
+
+![Using snmpcheck with communitystring](pics/snmp_info_by_community_string.png)
 
 Revealing that the password is saved within the data which in turn is used to log in to the server.
 
