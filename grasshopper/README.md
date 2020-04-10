@@ -104,7 +104,7 @@ _Given the fact that the communitystring is [sun], it’s perhaps a hint. ‘sun
 port 8686 – known for Sun App Server – used with netcat together with the server address._
 https://www.speedguide.net/port.php?port=8686
 
-![Grasshopper, second flag.](/pics/grasshopper_flag2.png)
+![Grasshopper, second flag.](pics/grasshopper_flag2.png)
 
 **The terminal of each server have no output**, that is why `echo` <string> is used after a command to check whether it is done executing.
 The last password in order to connect to the second server is located in the ```remote-access-terminal.sh``` file.
