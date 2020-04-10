@@ -69,7 +69,7 @@ Bruteforcing the community string using:
 
 **snmpwalk**
 
-Now we’ve got the communitystring we can test it with nmap. If its correct ([sun] in this case)
+Now we’ve got the communitystring we can test it with `snmpwalk`. If its correct ([sun] in this case)
 then it shows the output containing the password for the first server:
 `snmpwalk -v 2c -c <communitystring> <server address>`
 used:
